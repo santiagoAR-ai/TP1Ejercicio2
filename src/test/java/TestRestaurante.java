@@ -44,6 +44,7 @@ public class TestRestaurante {
         Propina propina= Propina.BAJO;
         restaurante.cobrar(tarjeta,menuComidas.get(2),menuBebidas.get(2),propina);
         assertEquals(new BigDecimal("2750.90"),tarjeta.getSaldo());
+
     }
 
     @Test
